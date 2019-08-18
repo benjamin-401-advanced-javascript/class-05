@@ -1,8 +1,8 @@
-# LAB - 
+# LAB - 05
 
-## Project Name
+## Class-05
 
-### Author: Student/Group Name
+### Author: Benjamin Clark
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
