@@ -5,10 +5,9 @@
 ### Author: Benjamin Clark
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [submission PR](https://github.com/benjamin-401-advanced-javascript/class-05/pull/2)
+* [travis](https://www.travis-ci.com/benjamin-401-advanced-javascript/class-05)
+* [front-end](https://cf-401-class-05.herokuapp.com/)
 
 #### Documentation
 * [api docs](http://xyz.com) (API servers)
@@ -19,28 +18,34 @@
 #### `modulename.js`
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+###### `get(_id) -> object`
+Gets a stored object with mactching id or returns all object if no id
 
-###### `bar(array) -> array`
-Usage Notes or examples
+###### `create(record) -> object`
+Creates an object in the database
+
+###### `update(_id, record) -> object`
+updates an object in the database
+
+###### `delete(_id)-> object`
+deletes an object in the database
 
 ### Setup
 #### `.env` requirements
 * `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `MONGODB_URI` - 'mongodb://localhost:27017/class05'
 
 #### Running the app
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* Endpoint: `/`
+  * Creates a category then console logs it.
+
   
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* "start": runs app
+* "lint": eslint tests
+* "test": unit tests
+* "startDB": starts mongo db in local .db folder
 
 #### UML
-Link to an image of the UML for your application and response to events
+![UML Diagram TEST](bitmoji.png)
