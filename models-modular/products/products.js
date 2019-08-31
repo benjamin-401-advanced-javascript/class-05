@@ -1,15 +1,14 @@
 'use strict';
 
 const Model = require('../mongo.js');
-const schema = require('./categories-schema.js');
+const schema = require('./products-schema.js');
 
 // How can we connect ourselves to the mongo interface?
 // What do we export?
-
-class Categories extends Model {
+class Products extends Model {
   constructor() {
     super(schema)
   }
 }
 
-module.exports = Categories;
+module.exports = Products;

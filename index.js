@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 // Require your model
-const Categories = require('./models-singular/categories');
+const Categories = require('./models-modular/categories/categories');
 
 // Mongoose Server URI
 const MONGOOSE_URI = 'mongodb://localhost:27017/class05';
