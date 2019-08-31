@@ -11,13 +11,15 @@ class Model {
     this.schema = schema;
   }
 
+
   /**
    * Retrieves one or more records
    * @param _id {string} optional mongo record id
-   * @returns {count:#,results:[{*}]} | {*}
+   * @returns {*}
    */
   get(_id) {
-
+    let queryObject = _id ? { _id } : {};
+    return this.schema.find(queryObject);
   }
 
   /**
@@ -26,7 +28,8 @@ class Model {
    * @returns {*}
    */
   create(record) {
-
+    let newRecord = new this.schema(record);
+    return newRecord.save();
   }
 
   /**
@@ -36,7 +39,7 @@ class Model {
    * @returns {*}
    */
   update(_id, record) {
-
+    return this.schema.findByIdAndUpdate(_id, record, { new: true });
   }
 
   /**
@@ -45,7 +48,7 @@ class Model {
    * @returns {*}
    */
   delete(_id) {
-
+    return this.schema.findByIdAndDelete(_id);
   }
 
 }
