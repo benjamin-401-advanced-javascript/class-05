@@ -5,14 +5,12 @@
 ### Author: Benjamin Clark
 
 ### Links and Resources
-* [submission PR](https://github.com/benjamin-401-advanced-javascript/class-05/pull/2)
+* [submission PR](https://github.com/benjamin-401-advanced-javascript/class-05/pull/3)
 * [travis](https://www.travis-ci.com/benjamin-401-advanced-javascript/class-05)
 * [front-end](https://cf-401-class-05.herokuapp.com/)
 
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
+* [jsdoc](I don't know but i did the jsdocs) (Server assignments)
 
 ### Modules
 #### `modulename.js`
@@ -48,4 +46,5 @@ deletes an object in the database
 * "startDB": starts mongo db in local .db folder
 
 #### UML
+going to use webstorm to generate all my UMLs once i get it setup.
 ![UML Diagram TEST](bitmoji.png)
